@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_20"
+    android:paddingLeft="@dimen/dimen_20"
+    android:paddingRight="@dimen/dimen_20"
+    android:paddingTop="@dimen/dimen_20"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="40px"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button_up"
+        android:text="UP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/button_down"
+        android:text="Down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/resolution_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resolution"
+        android:textSize="40px"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"/>
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/player_view"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/resolution_textView"
+        android:layout_marginTop="10dp" />
+
+
+
+</LinearLayout>
